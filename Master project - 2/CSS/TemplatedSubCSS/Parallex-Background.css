@@ -1,4 +1,4 @@
-@import url("../Templated Super CSS/ParallexImageExtension.css");
+@import url("../TemplatedSuperCSS/ParallexImageExtension.css");
 
 #night-image {
     background-image: url("../../JPEG/Night Image.jpg");
@@ -100,6 +100,12 @@
     filter: grayscale(70%);
     min-height: 100dvh;
 }
+.C1 {
+    background-image: url(../../JPEG/C1.jpg);
+    filter: grayscale(70%);
+    min-height: 100dvh;
+}
+
 #D1 {
     background-image: url(../../JPEG/D1.jpg);
     filter: grayscale(70%);

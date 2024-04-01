@@ -1,6 +1,13 @@
-@import url("../Templated Super CSS/HeaderExtension..css");
+@import url("../TemplatedSuperCSS/HeaderExtension..css");
 
 #main-page-title {
+    background-color: rgba(32, 32, 32, 0.436);
+    color: rgb(226, 226, 226);
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+.main-page-title {
     background-color: rgba(32, 32, 32, 0.436);
     color: rgb(226, 226, 226);
     font-size: 30px;
@@ -15,6 +22,13 @@
 }
 
 #feedback {
+    background-color: rgba(101, 101, 101, 0.478);
+    color: rgb(237, 237, 237);
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+.parallex-sub-header{
     background-color: rgba(101, 101, 101, 0.478);
     color: rgb(237, 237, 237);
     font-size: 30px;

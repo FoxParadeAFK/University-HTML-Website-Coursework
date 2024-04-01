@@ -12,22 +12,28 @@
 
 .input-device {
     width: 95%;
-    font-family: 'Grotesque-light', sans-serif;
+    font-family: 'Darker Grotesque', sans-serif;
     border: none;
     border-radius: 4px;
     padding: 12px;
 }
 .input-device:active {
     width: 95%;
-    font-family: 'Grotesque-light', sans-serif;
+    font-family: 'Darker Grotesque', sans-serif;
     border: none;
 }
 
 #left-input-device {
     text-align: left;
 }
+.left-input-device {
+    text-align: left;
+}
 
 #right-input-device {
+    text-align: right;
+}
+.right-input-device {
     text-align: right;
 }
 
@@ -37,7 +43,7 @@
 }
 
 .textarea-device {
-    font-family: 'Grotesque-light', sans-serif;
+    font-family: 'Darker Grotesque', sans-serif;
     border: none;
     border-radius: 4px;
     padding: 12px;
@@ -52,7 +58,7 @@
 }
 
 .submit-device {
-    font-family: 'Grotesque-light', sans-serif;
+    font-family: 'Darker Grotesque', sans-serif;
     border-radius: 4px;
     padding: 4px;
     border: none;

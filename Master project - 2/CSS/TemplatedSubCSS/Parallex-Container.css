@@ -1,7 +1,14 @@
-@import url("../Templated Super CSS/ParallexExtension.css");
+@import url("../TemplatedSuperCSS/ParallexExtension.css");
 
 /* #region DARK THEME */ 
 #dark-parallex-text-field {
+    color: rgb(233, 233, 233);
+    background-color: rgb(31, 31, 31);
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.dark-parallex-text-field {
     color: rgb(233, 233, 233);
     background-color: rgb(31, 31, 31);
     padding-top: 10px;
@@ -13,14 +20,55 @@
     padding-bottom: 20px;
 }
 
+.dark-parallex-text-header {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
 #dark-parallex-text-paragraph {
     font-size: 12px;
     padding-bottom: 15px;
 }
 
-#dark-parallex-text-paragraph-padding-bottom {
+.dark-parallex-text-paragraph {
     font-size: 12px;
-    padding-bottom: 3px;
+    padding-bottom: 15px;
+}
+
+#dark-parallex-text-icon-marker {
+    color: rgb(244, 244, 244);
+    padding-right: 6.75px;
+    padding-bottom: 5px;
+}
+
+#dark-parallex-text-icon-phone {
+    color: rgb(244, 244, 244);
+    padding-right: 6.75px;
+    padding-bottom: 5px;
+}
+
+#dark-parallex-text-icon-mail {
+    color: rgb(244, 244, 244);
+    padding-right: 3px;
+    padding-bottom: 5px;
+}
+
+.dark-parallex-text-icon-mail {
+    color: rgb(244, 244, 244);
+    padding-right: 3px;
+    padding-bottom: 5px;
+}
+
+#dark-parallex-text-address {
+    color: rgb(244, 244, 244);
+    padding-right: 1.5px;
+    padding-bottom: 5px;
+}
+
+.dark-parallex-text-address {
+    color: rgb(244, 244, 244);
+    padding-right: 1.5px;
+    padding-bottom: 5px;
 }
 /* #endregion */
 
@@ -55,6 +103,14 @@
     flex: 0 0 auto;
 }
 
+.light-parallex-text-field {
+    color: rgb(71, 71, 71);
+    background-color: rgb(244, 244, 244);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    flex: 0 0 auto;
+}
+
 #light-parallex-text-field-last {
     color: rgb(71, 71, 71);
     background-color: rgb(244, 244, 244);
@@ -68,11 +124,25 @@
     padding-bottom: 20px;
 }
 
+.light-parallex-text-header {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
 #light-parallex-text-sub-header {
     font-size: 20px;
 }
 
+.light-parallex-text-sub-header {
+    font-size: 20px;
+}
+
 #light-parallex-text-paragraph {
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+.light-parallex-text-paragraph {
     font-size: 12px;
     padding-bottom: 20px;
 }
@@ -83,28 +153,4 @@
     padding-top: 20px;
     padding-bottom: 30px;
     flex: 0 0 auto;
-}
-
-#dark-parallex-text-icon-marker {
-    color: rgb(244, 244, 244);
-    padding-right: 6.75px;
-    padding-bottom: 5px;
-}
-
-#dark-parallex-text-icon-phone {
-    color: rgb(244, 244, 244);
-    padding-right: 6.75px;
-    padding-bottom: 5px;
-}
-
-#dark-parallex-text-icon-mail {
-    color: rgb(244, 244, 244);
-    padding-right: 3px;
-    padding-bottom: 5px;
-}
-
-#dark-parallex-text-address {
-    color: rgb(244, 244, 244);
-    padding-right: 1.5px;
-    padding-bottom: 5px;
 }

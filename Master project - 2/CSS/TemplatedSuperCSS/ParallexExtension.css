@@ -16,7 +16,7 @@
 
         letter spacing for the title */
     text-align: center;
-    font-family: 'Lato-thin', sans-serif;
+    font-family: 'Lato', sans-serif;
     letter-spacing: 10px;
 }
 
@@ -26,7 +26,7 @@
 
         letter spacing for the title */
     text-align: center;
-    font-family: 'Grotesque-light', sans-serif;
+    font-family: 'Darker Grotesque', sans-serif;
     letter-spacing: 2px;
 }
 
@@ -36,7 +36,7 @@
 
         letter spacing for the paragraphs */
     text-align: center;
-    font-family: 'Grotesque-light', sans-serif;
+    font-family: 'Darker Grotesque', sans-serif;
     letter-spacing: 2px;
 }
 
@@ -46,7 +46,7 @@
 
         letter spacing for the paragraphs */
     text-align: left;
-    font-family: 'Grotesque-light', sans-serif;
+    font-family: 'Darker Grotesque', sans-serif;
     letter-spacing: 2px;
 }
 
@@ -56,7 +56,7 @@
 
         letter spacing for the paragraphs */
     text-align: right;
-    font-family: 'Grotesque-light', sans-serif;
+    font-family: 'Darker Grotesque', sans-serif;
     letter-spacing: 2px;
 }
 

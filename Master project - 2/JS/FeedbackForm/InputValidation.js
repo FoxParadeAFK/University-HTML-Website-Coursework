@@ -1,16 +1,25 @@
 let errormessage = document.querySelector('.error-class');
 let submitbutton = document.getElementById('submit-button');
 let feedbackform = document.getElementById('feedback-form');
-let customerdetails = document.querySelectorAll('#ID_customer_detail');
+let customerdetails = document.querySelectorAll('.ID_customer_detail');
 let customeremail = document.querySelector('#customer-email');
 let emailselect = document.querySelector('#email-selection')
-let ratingselection = document.querySelector('#rating');
+let ratingselection = document.querySelector('.rating-options');
 
 let market = document.querySelector('#market');
 let nagivation = document.querySelector('#navigation');
 
 let REVIEW_FINAL_form = document.getElementById('REVIEW-FORM-form');
 let INPUT_FORM_form = document.getElementById('INPUT-FORM-form');
+
+let TEXTAREA_rating = document.querySelector('#TEXTAREA_rating');
+
+let improvement = document.querySelector('#improvement');
+let INPUT_FORM_improvement_comment = document.querySelector('#INPUT_FORM_improvement_comment');
+
+let information = document.querySelector('#information');
+let INPUT_FORM_information_comment = document.querySelector('#INPUT_FORM_information_comment');
+
 
 function formCheck() {
     console.log(feedbackform);
@@ -31,10 +40,10 @@ function formCheck() {
 function finalDisplay() {
     let REVIEW_FINAL_first = document.querySelector('.REVIEW_FINAL_first');
     let REVIEW_FINAL_last = document.querySelector('.REVIEW_FINAL_last');
-    let INPUT_FORM_first = document.querySelectorAll('#ID_customer_detail');
+    let INPUT_FORM_first = document.querySelectorAll('.ID_customer_detail');
 
     let REVIEW_FINAL_rating = document.querySelector('.REVIEW_FINAL_rating');
-    let INPUT_FORM_rating = document.querySelector('#rating');
+    let INPUT_FORM_rating = document.querySelector('.rating-options');
     let REVIEW_FINAL_rating_comment = document.querySelector('.REVIEW_FINAL_rating_comment');
     let INPUT_FORM_rating_comment = document.querySelector('#INPUT_FORM_rating_comment');
 
@@ -114,7 +123,10 @@ function customerDetails(founderror) {
 
     founderror = customerEmail(founderror);
     founderror = customerRating(founderror);
-    founderror = customertextarea(founderror);
+    founderror = customerRatingTextarea(founderror);
+    founderror = customertextarea(founderror)
+    founderror = customerImprovementTextarea(founderror);
+    founderror = customerInformationTextarea(founderror);
 
     return founderror;
 }
@@ -144,10 +156,10 @@ function customerRating(founderror) {
 }
 
 // * Used for the rating 
-function customerRating(founderror) {
-    if (ratingselection.value == "select" && !founderror) {
+function customerRatingTextarea(founderror) {
+    if (ratingselection.value < 6 && TEXTAREA_rating.value == "" && !founderror) {
         founderror = true;
-        errormessage.innerHTML = "Select a rating";
+        errormessage.innerHTML = "Rating textarea empty";
     }
 
     if (!founderror) errormessage.innerHTML = "";
@@ -160,6 +172,29 @@ function customertextarea(founderror) {
     if ((market.value == "" || nagivation.value == "") && !founderror) {
         founderror = true;
         errormessage.innerHTML = "Textarea empty";
+    }
+
+    if (!founderror) errormessage.innerHTML = "";
+
+    return founderror;
+}
+
+// * Used for the exposed textarea 
+function customerInformationTextarea(founderror) {
+    if (information.value == "yes" && INPUT_FORM_information_comment.value == "" && !founderror) {
+        founderror = true;
+        errormessage.innerHTML = "Information textare empty";
+    }
+
+    if (!founderror) errormessage.innerHTML = "";
+
+    return founderror;
+}
+
+function customerImprovementTextarea(founderror) {
+    if (improvement.value == "yes" && INPUT_FORM_improvement_comment.value == "" && !founderror) {
+        founderror = true;
+        errormessage.innerHTML = "Improvement textare empty";
     }
 
     if (!founderror) errormessage.innerHTML = "";
